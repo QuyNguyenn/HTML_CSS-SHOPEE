@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/normalizer.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">    
@@ -16,15 +17,81 @@
             <div class="grid">
                 <nav class="navbar">
                     <ul class="navbar__list">
-                        <li class="navbar__list-item navbar__list-item--separate">Vào cửa hàng trên ứng dụng F8-Shop</li>
-                        <li class="navbar__list-item">Kết nối</li>
+                        <li class="navbar__list-item navbar__list-item--separate navbar__list-item--hover-qr">
+                            Vào cửa hàng trên ứng dụng F8-Shop
+
+                            <!--Begin: QR Code-->
+                            <div class="navbar__qr">
+                                <img src="./assets/img/QRCode.png" alt="QR Code" class="navbar__qr-img">
+                                <div class="navbar__qr-apps">
+                                    <img src="./assets/img/AppStores.png" alt="App Stores" class="navbar__qr-apps-img">
+                                    <img src="./assets/img/GooglePlay.png" alt="GooglePlay" class="navbar__qr-apps-img">
+                                    <img src="./assets/img/AppGallery.png" alt="AppGallery" class="navbar__qr-apps-img">
+                                </div>
+                            </div>
+                            <!--End: QR Code-->
+                        </li>
+                        <li class="navbar__list-item">
+                            <span class="navbar__list-title--no-pointer">Kết nối</span>
+                            <a href="" class="navbar__list-icon-link">
+                                <i class="navbar__list-icon fab fa-facebook"></i>
+                            </a>
+                            <a href="" class="navbar__list-icon-link">
+                                <i class="navbar__list-icon fab fa-instagram"></i>
+                            </a>
+                        </li>
                     </ul>
                     <ul class="navbar__list">
                         <li class="navbar__list-item">
-                            <a href="#" class="navbar__list-item-link">Thông báo</a>
+                            <a href="#" class="navbar__list-item-link">
+                                <i class="navbar__list-icon far fa-bell"></i>
+                                Thông báo
+                            </a>
+                            <div class="navbar__notify">
+                                <header class="navbar__notify-header">
+                                    <h3>Thông Báo Mới Nhận</h3>
+                                </header>
+                                <ul class="navbar__notify-list">
+                                    <li class="navbar__notify-item">
+                                        <a href="" class="navbar__notify-link">
+                                            <img src="https://cf.shopee.vn/file/18b4ae3e01a85f81d1f9d7f71e5aa082_tn" alt="Sale Off" class="navbar__notify-img">
+                                            <div class="navbar__notify-info">
+                                                <p class="navbar__notify-name">Voucher Shopee Mall giảm đến 50K!</p>
+                                                <p class="navbar__notify-des">😍 Dành cho đơn từ 50K ✨Hàng chính hãng giảm đến 50% ✔ Số lượng có hạn! Mua liền tay!</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="navbar__notify-item navbar__notify-item--notread">
+                                        <a href="" class="navbar__notify-link">
+                                            <img src="https://cf.shopee.vn/file/18b4ae3e01a85f81d1f9d7f71e5aa082_tn" alt="Sale Off" class="navbar__notify-img">
+                                            <div class="navbar__notify-info">
+                                                <p class="navbar__notify-name">Voucher Shopee Mall giảm đến 50K!</p>
+                                                <p class="navbar__notify-des">😍 Dành cho đơn từ 50K ✨Hàng chính hãng giảm đến 50% ✔ Số lượng có hạn! Mua liền tay!</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="navbar__notify-item navbar__notify-item--notread">
+                                        <a href="" class="navbar__notify-link">
+                                            <img src="https://cf.shopee.vn/file/18b4ae3e01a85f81d1f9d7f71e5aa082_tn" alt="Sale Off" class="navbar__notify-img">
+                                            <div class="navbar__notify-info">
+                                                <p class="navbar__notify-name">Voucher Shopee Mall giảm đến 50K!</p>
+                                                <p class="navbar__notify-des">😍 Dành cho đơn từ 50K ✨Hàng chính hãng giảm đến 50% ✔ Số lượng có hạn! Mua liền tay!</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <footer class="navbar__notify-footer">
+                                    <a href="" class="navbar__notify-footer-link">
+                                        Xem tất cả
+                                    </a>
+                                </footer>
+                            </div>
                         </li>
                         <li class="navbar__list-item">
-                            <a href="#" class="navbar__list-item-link">Trợ giúp</a>
+                            <a href="#" class="navbar__list-item-link">
+                                <i class="navbar__list-icon far fa-question-circle"></i>
+                                Trợ giúp
+                            </a>
                         </li>
                         <li class="navbar__list-item navbar__list-item--bold navbar__list-item--separate">Đăng ký</li>
                         <li class="navbar__list-item navbar__list-item--bold">Đăng nhập</li>
