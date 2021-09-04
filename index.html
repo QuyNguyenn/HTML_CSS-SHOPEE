@@ -278,24 +278,221 @@
             </div>
         </header>
 
-        <div class="container">
-            <h3 class="category-heading">
-                <i class="fas fa-list"></i>
-                Danh mục
-            </h3>
-            <nav class="category">
-                <ul class="category-list">
-                    <li class="category-item category-item--active">
-                        <a href="" class="category-item__link">Trang điểm mặt</a>
-                    </li>
-                    <li class="category-item">
-                        <a href="" class="category-item__link">Trang điểm môi</a>
-                    </li>
-                    <li class="category-item">
-                        <a href="" class="category-item__link">Trang điểm mắt</a>
-                    </li>
-                </ul>
-            </nav>
+        <div class="app__container">
+            <div class="grid">
+                <div class="grid__row app_content">
+                    <div class="grid__column-2">
+                        <nav class="category">
+                            <h3 class="category-heading">
+                                <i class="category-heading-icon fas fa-list"></i>
+                                Danh mục
+                            </h3>
+                            <ul class="category-list">
+                                <li class="category-item category-item--active">
+                                    <a href="" class="category-item__link">Trang điểm mặt</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="" class="category-item__link">Trang điểm môi</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="" class="category-item__link">Trang điểm mắt</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="grid__column-10">
+                        <div class="home-sort-filter">
+                            <div class="home-sort">
+                                <span class="sort-title">Sắp xếp theo</span>
+                                <button class="btn sort-btn sort-btn--selected">Phổ biến</button>
+                                <button class="btn sort-btn">Mới nhất</button>
+                                <button class="btn sort-btn">Bán chạy</button>
+                                <!-- Selected price sorting: sort-by-price--selected -->
+                                <button class="select-btn sort-by-price">
+                                    Giá
+                                    <i class="fas fa-chevron-down"></i>
+                                    <ul class="select-btn-list">
+                                        <li class="select-btn-item">
+                                            Giá: Thấp đến Cao
+                                        </li>
+                                        <li class="select-btn-item">
+                                            Giá: Cao đến Thấp
+                                        </li>
+                                    </ul>
+                                </button>
+                            </div>
+                            <div class="home-page-select">
+                                <p class="page-number__display">
+                                    <span class="page-number__current">1</span>/<span class="page-number__total">100</span>
+                                </p>
+                                <button class="btn btn--disable page-number__previous">
+                                    <i class="fas fa-chevron-left"></i>
+                                </button>
+                                <button class="btn page-number__next">
+                                    <i class="fas fa-chevron-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="home-product">
+                            <a href="" class="home-product-item">
+                                <div class="home-product__img" style="background-image: url(https://cf.shopee.vn/file/5dd39557c5314a239c3e7a0ac086bd00);"></div>
+                                <div class="home-product-content">
+                                    <div class="home-product__name">
+                                        <h4 class="home-product__name-text">
+                                            Serum Dưỡng Trắng Da Skin Booster Milk Oil Serum 30ml Chính Hãng So Natural | Giúp Nuôi Dưỡng Căng Bóng Da
+                                        </h4>
+                                    </div>
+                                    <div class="home-product__price">
+                                        <span class="home-product__price-old">820.000đ</span>
+                                        <span class="home-product__price-new">650.000đ</span>
+                                    </div>
+                                    <div class="home-product__interact">
+                                        <div class="home-product__interact-heart">
+                                            <i class="far fa-heart home-product__interact-unlike"></i>
+                                            <!-- <i class="fas fa-heart home-product__interact-like"></i> -->
+                                        </div>
+                                        <div class="home-product__interact-star">
+                                            <i class="fas fa-star home-product__interact-star-full"></i>
+                                            <i class="fas fa-star home-product__interact-star-full"></i>
+                                            <i class="fas fa-star home-product__interact-star-full"></i>
+                                            <i class="fas fa-star-half-alt home-product__interact-star-half"></i>
+                                            <i class="far fa-star home-product__interact-star-blank"></i>
+                                        </div>
+                                    </div>
+                                    <div class="home-product__intro">
+                                        <span class="home-product__brand">So Natural</span>
+                                        <span class="home-product__origin">Hàn Quốc</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="" class="home-product-item">
+                                <div class="home-product__img" style="background-image: url(https://cf.shopee.vn/file/5dd39557c5314a239c3e7a0ac086bd00);"></div>
+                                <div class="home-product-content">
+                                    <div class="home-product__name">
+                                        <h4 class="home-product__name-text">
+                                            Serum Dưỡng Trắng Da Skin Booster Milk Oil Serum 30ml Chính Hãng So Natural | Giúp Nuôi Dưỡng Căng Bóng Da
+                                        </h4>
+                                    </div>
+                                    <div class="home-product__price">
+                                        <span class="home-product__price-old">820.000đ</span>
+                                        <span class="home-product__price-new">650.000đ</span>
+                                    </div>
+                                    <div class="home-product__interact">
+                                        <div class="home-product__interact-heart">
+                                            <i class="far fa-heart home-product__interact-unlike"></i>
+                                            <!-- <i class="fas fa-heart home-product__interact-like"></i> -->
+                                        </div>
+                                        <div class="home-product__interact-star">
+                                            <i class="fas fa-star home-product__interact-star-full"></i>
+                                            <i class="fas fa-star home-product__interact-star-full"></i>
+                                            <i class="fas fa-star home-product__interact-star-full"></i>
+                                            <i class="fas fa-star-half-alt home-product__interact-star-half"></i>
+                                            <i class="far fa-star home-product__interact-star-blank"></i>
+                                        </div>
+                                    </div>
+                                    <div class="home-product__intro">
+                                        <span class="home-product__brand">So Natural</span>
+                                        <span class="home-product__origin">Hàn Quốc</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="" class="home-product-item">
+                                <div class="home-product__img" style="background-image: url(https://cf.shopee.vn/file/5dd39557c5314a239c3e7a0ac086bd00);"></div>
+                                <div class="home-product-content">
+                                    <div class="home-product__name">
+                                        <h4 class="home-product__name-text">
+                                            Serum Dưỡng Trắng Da Skin Booster Milk Oil Serum 30ml Chính Hãng So Natural | Giúp Nuôi Dưỡng Căng Bóng Da
+                                        </h4>
+                                    </div>
+                                    <div class="home-product__price">
+                                        <span class="home-product__price-old">820.000đ</span>
+                                        <span class="home-product__price-new">650.000đ</span>
+                                    </div>
+                                    <div class="home-product__interact">
+                                        <div class="home-product__interact-heart">
+                                            <i class="far fa-heart home-product__interact-unlike"></i>
+                                            <!-- <i class="fas fa-heart home-product__interact-like"></i> -->
+                                        </div>
+                                        <div class="home-product__interact-star">
+                                            <i class="fas fa-star home-product__interact-star-full"></i>
+                                            <i class="fas fa-star home-product__interact-star-full"></i>
+                                            <i class="fas fa-star home-product__interact-star-full"></i>
+                                            <i class="fas fa-star-half-alt home-product__interact-star-half"></i>
+                                            <i class="far fa-star home-product__interact-star-blank"></i>
+                                        </div>
+                                    </div>
+                                    <div class="home-product__intro">
+                                        <span class="home-product__brand">So Natural</span>
+                                        <span class="home-product__origin">Hàn Quốc</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="" class="home-product-item">
+                                <div class="home-product__img" style="background-image: url(https://cf.shopee.vn/file/5dd39557c5314a239c3e7a0ac086bd00);"></div>
+                                <div class="home-product-content">
+                                    <div class="home-product__name">
+                                        <h4 class="home-product__name-text">
+                                            Serum Dưỡng Trắng Da Skin Booster Milk Oil Serum 30ml Chính Hãng So Natural | Giúp Nuôi Dưỡng Căng Bóng Da
+                                        </h4>
+                                    </div>
+                                    <div class="home-product__price">
+                                        <span class="home-product__price-old">820.000đ</span>
+                                        <span class="home-product__price-new">650.000đ</span>
+                                    </div>
+                                    <div class="home-product__interact">
+                                        <div class="home-product__interact-heart">
+                                            <i class="far fa-heart home-product__interact-unlike"></i>
+                                            <!-- <i class="fas fa-heart home-product__interact-like"></i> -->
+                                        </div>
+                                        <div class="home-product__interact-star">
+                                            <i class="fas fa-star home-product__interact-star-full"></i>
+                                            <i class="fas fa-star home-product__interact-star-full"></i>
+                                            <i class="fas fa-star home-product__interact-star-full"></i>
+                                            <i class="fas fa-star-half-alt home-product__interact-star-half"></i>
+                                            <i class="far fa-star home-product__interact-star-blank"></i>
+                                        </div>
+                                    </div>
+                                    <div class="home-product__intro">
+                                        <span class="home-product__brand">So Natural</span>
+                                        <span class="home-product__origin">Hàn Quốc</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="" class="home-product-item">
+                                <div class="home-product__img" style="background-image: url(https://cf.shopee.vn/file/5dd39557c5314a239c3e7a0ac086bd00);"></div>
+                                <div class="home-product-content">
+                                    <div class="home-product__name">
+                                        <h4 class="home-product__name-text">
+                                            Serum Dưỡng Trắng Da Skin Booster Milk Oil Serum 30ml Chính Hãng So Natural | Giúp Nuôi Dưỡng Căng Bóng Da
+                                        </h4>
+                                    </div>
+                                    <div class="home-product__price">
+                                        <span class="home-product__price-old">820.000đ</span>
+                                        <span class="home-product__price-new">650.000đ</span>
+                                    </div>
+                                    <div class="home-product__interact">
+                                        <div class="home-product__interact-heart">
+                                            <i class="far fa-heart home-product__interact-unlike"></i>
+                                            <!-- <i class="fas fa-heart home-product__interact-like"></i> -->
+                                        </div>
+                                        <div class="home-product__interact-star">
+                                            <i class="fas fa-star home-product__interact-star-full"></i>
+                                            <i class="fas fa-star home-product__interact-star-full"></i>
+                                            <i class="fas fa-star home-product__interact-star-full"></i>
+                                            <i class="fas fa-star-half-alt home-product__interact-star-half"></i>
+                                            <i class="far fa-star home-product__interact-star-blank"></i>
+                                        </div>
+                                    </div>
+                                    <div class="home-product__intro">
+                                        <span class="home-product__brand">So Natural</span>
+                                        <span class="home-product__origin">Hàn Quốc</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <footer class="footer">
