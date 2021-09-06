@@ -246,8 +246,14 @@ html {
 }
 
 /* Footer */
-.footer--top-margin {
+.footer {
+    border-top: 4px solid var(--primary-color);
+}
+
+.footer__shopee-info {
+    background-color: #fbfbfb;
     padding-top: 32px;
+    padding-bottom: 24px;
 }
 
 .footer__heading {
@@ -281,11 +287,13 @@ html {
 
 .footer__list-item-icon {
     color: #4a4a4a;
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     position: relative;
     top: 2px;
     display: inline-block;
-    width: 24px;
+    width: 17px;
+    text-align: center;
+    margin-right: 6px;
 }
 
 .footer__app-link {
@@ -469,4 +477,124 @@ html {
     height: 22px;
     background-size: 1029.1666666666667% 590%;
     background-position: 13.452914798206278% 6.802721088435374%;
+}
+
+.footer__region {
+    background-color: #fbfbfb;
+}
+
+.footer__region-wrapper {
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 42px;
+    padding-bottom: 42px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.footer__ownership {
+    display: block;
+    font-size: 1.4rem;
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.footer__region-select {
+    display: flex;
+}
+
+.footer__region-lable {
+    display: block;
+    font-size: 1.4rem;
+    color: rgba(0, 0, 0, 0.54);
+    text-decoration: none;
+}
+
+.footer__region-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.footer__region-item {
+    padding: 0 6px;
+}
+
+.footer__region-item + .footer__region-item {
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.footer_region-link {
+    font-size: 1.4rem;
+    color: rgba(0, 0, 0, 0.54);
+    text-decoration: none;
+}
+
+.footer__additional-info {
+    background-color: #f5f5f5;
+    text-align: center;
+    padding-top: 42px;
+    padding-bottom: 24px;
+}
+
+.footer__policy {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 42px;
+}
+
+.footer__policy-item {
+    padding: 0 24px;
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.54);
+    text-decoration: none;
+}
+
+.footer__policy-item + .footer__policy-item {
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.footer__comercial-register {
+    display: flex;
+    justify-content: center;
+}
+
+.footer__web-register,
+.footer__app-register,
+.footer__regulation {
+    background-image: url(../img/background-img.png);
+    margin: 0 20px;
+}
+
+.footer__web-register {
+    width: 120px;
+    height: 45px;
+    background-size: 617.5% 393.3333333333333%;
+    background-position: 34.13848631239936% 84.0909090909091%;
+}
+
+.footer__app-register {
+    width: 120px;
+    height: 45px;
+    background-size: 617.5% 393.3333333333333%;
+    background-position: 34.13848631239936% 84.0909090909091%;
+}
+
+.footer__regulation {
+    width: 48px;
+    height: 48px;
+    background-size: 1543.75% 368.75%;
+    background-position: 100% 35.65891472868217%;
+}
+
+.footer__company-name {
+    display: block;
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.54);
+    padding: 8px 0;
+}
+
+.footer__contact-info {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: rgba(0, 0, 0, 0.54);
 }
