@@ -5,6 +5,7 @@
     --text-color: rgba(0, 0, 0, 0.8);
     --border-color: #dbdbdb;
     --header-height: 120px;
+    --header-sort-bar-height: 46px;
     --navbar-height: 34px;
     --header-with-search-height: calc(var(--header-height) - var(--navbar-height));
 }
@@ -19,39 +20,6 @@ html {
     line-height: 1.6rem;
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
-}
-
-/* Responsive */
-.grid {
-    width: 1200px;
-    max-width: 100%;
-    margin: 0 auto;
-}
-
-.grid__full-width {
-    width: 100%;
-}
-
-.grid__row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -5px;
-    margin-right: -5px;
-}
-
-.grid__column-2 {
-    width: 16.6667%;
-    padding: 0 5px;
-}
-
-.grid__column-2-4 {
-    width: 20%;
-    padding: 0 5px;
-}
-
-.grid__column-10 {
-    width: 83.3333%;
-    padding: 0 5px;
 }
 
 @keyframes FadeIn {
@@ -69,6 +37,33 @@ html {
     }
     to {
         transform: scale(var(--growth-to));
+    }
+}
+
+@keyframes SlideInTop {
+    from {
+        top: 0;
+        transform: translateY(-100%);
+    }
+    to {
+    }
+}
+
+@keyframes SlideInRight {
+    from {
+        right: 0;
+        transform: translateX(100%);
+    }
+    to {
+    }
+}
+
+@keyframes SlideInLeft {
+    from {
+        left: 0;
+        transform: translateX(-100%);
+    }
+    to {
     }
 }
 
@@ -232,7 +227,8 @@ html {
     text-decoration: none;
     line-height: var(--height);
     height: var(--height);
-    min-width: 40px;
+    width: 40px;
+    max-width: 100%;
     padding: 0 2px;
 }
 
@@ -306,6 +302,7 @@ html {
     height: 86px;
     border: 1px solid #e4e4e4;
     margin-right: 14px;
+    flex-shrink: 0;
 }
 
 .footer__qr-img {
@@ -318,11 +315,13 @@ html {
     flex-direction: column;
     justify-content: space-around;
     padding-bottom: 2px;
+    flex-shrink: 1;
 }
 
 .footer__app-img {
     width: 82px;
     display: block;
+    flex-shrink: 1;
 }
 
 .footer__paytment {
@@ -487,7 +486,7 @@ html {
     justify-content: space-between;
     align-items: center;
     padding-top: 42px;
-    padding-bottom: 42px;
+    padding-bottom: 30px;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -495,6 +494,7 @@ html {
     display: block;
     font-size: 1.4rem;
     color: rgba(0, 0, 0, 0.54);
+    margin-bottom: 16px;
 }
 
 .footer__region-select {
@@ -513,10 +513,13 @@ html {
     padding: 0;
     margin: 0;
     display: flex;
+    flex-wrap: wrap;
+    flex: 1;
 }
 
 .footer__region-item {
-    padding: 0 6px;
+    padding: 0px 6px;
+    margin-bottom: 12px;
 }
 
 .footer__region-item + .footer__region-item {
