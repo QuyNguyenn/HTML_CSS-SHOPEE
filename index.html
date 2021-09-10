@@ -193,11 +193,13 @@
 
                     <div class="header__cart">
                         <!-- header__cart empty: header__cart-detail--empty -->
-                        <div class="header__cart-icon-wrap">
+                        <label for="header__cart-detail-show" class="header__cart-icon-wrap">
                             <i class="header__cart-icon fas fa-shopping-cart"></i>
                             <p class="header__cart-number">
                                 3
                             </p>
+                            <input type="checkbox" hidden name="" id="header__cart-detail-show" class="header__cart-detail-show">
+                            <label for="header__cart-detail-show" class="header__cart-detail-overlay"></label>
                             <div class="header__cart-detail">
                                 <!-- Empty cart -->
                                 <img src="./assets/img/cart-empty.png" alt="" class="header_cart-img-empty">
@@ -513,7 +515,7 @@
                                     </a>
                                 </div>
                             </div>
-                        </div>
+                        </label>
                     </div>
                 </div>
             </div>

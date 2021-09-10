@@ -19,6 +19,18 @@
         right: 0;
     }
 
+    .header__cart-icon-wrap:hover .header__cart-detail {
+        display: none;
+    }
+
+    .header__cart-detail-show:checked ~ .header__cart-detail-overlay {
+        display: block;
+    }
+
+    .header__cart-detail-show:checked ~ .header__cart-detail {
+        display: block;
+    }
+
     .header-with-search {
         height: var(--header-with-search-height);
         padding-bottom: 0;
