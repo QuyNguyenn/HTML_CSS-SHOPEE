@@ -1415,13 +1415,15 @@
 
 .home-product__interact {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: flex-end;
     align-items: center;
     margin: 10px 0;
 }
 
 .home-product__interact-heart {
     font-size: 1.2rem;
+    flex-shrink: 0;
 }
 
 .home-product__interact-unlike {
@@ -1446,12 +1448,14 @@
     color: #ffce3d;
     margin-left: auto;
     margin-top: -1px;
+    flex-shrink: 0;
 }
 
 .home-product__interact-sold {
     font-size: 1.2rem;
     color: var(--text-color);
     margin-left: 6px;
+    flex-shrink: 0;
 }
 
 .home-product__intro {
@@ -1463,6 +1467,11 @@
 .home-product__origin {
     font-size: 1.3rem;
     color: rgba(0, 0, 0, 0.2);
+    max-width: 48%;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
 }
 
 .home-product__favourite {
