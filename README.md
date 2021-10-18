@@ -1,3 +1,3 @@
-#HTML_CSS COURSE
+HTML_CSS COURSE
 
 Build Shopee web
